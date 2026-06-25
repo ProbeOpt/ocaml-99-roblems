@@ -1,5 +1,7 @@
 # 99 problems in OCaml
 
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/4bd5ca69-0e80-4bda-8a31-3c551b0643c2" />
+
 ## Mission:
 - Learn (and possibly master) OCaml.
 
