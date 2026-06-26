@@ -1,2 +1,5 @@
+let greet n =
+    Printf.printf "Hello, %s" n
+
 let () =
-    print_endline "Hello, Seaman!"
+    greet "Seaman!"

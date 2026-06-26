@@ -1,6 +1,6 @@
 let rec rec_fact n =
     if n < 0 then
-        -1
+        0
     else
         match n with
         | 0 -> 1
@@ -8,11 +8,11 @@ let rec rec_fact n =
         | x -> x * rec_fact (n-1)
 
 let fact n =
-  let result = ref 1 in
-  for i = 2 to n do
-    result := !result * i
-  done;
-  !result
+    let result = ref 1 in (*so, `ref 1` is an mutable value? might be a pointer? nahh, just a mutable value.*)
+    for i = 2 to n do
+        result := !result * i
+    done;
+    !result
 
 let () =
     print_endline "Hello, Seaman! Welcome to factorial.\n";; (*Why do we need double semi-colons? This (`;;`) is not pretty*)
