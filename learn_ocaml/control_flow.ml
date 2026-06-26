@@ -20,5 +20,15 @@ let fizzbuzz2 n =
      end
   done
 
+let rec rec_fizzbuzz x o =
+  if x < 0 then begin
+    if x mod 15 == 0 then Printf.printf "FizzBuzz\n"
+    else if x mod 3 == 0 then Printf.printf "Fizz\n"
+    else if x mod 5 == 0 then Printf.printf "Buzz\n"
+    else Printf.printf "%d\n" x;
+    rec_fizzbuzz (x+1) o;
+  end
+
 let () =
-   fizzbuzz2 100;
+  fizzbuzz 100
+  (*rec_fizzbuzz 1 100*)
