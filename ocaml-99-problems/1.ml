@@ -1,8 +1,9 @@
-let rec last (lst: int list ) =
+let rec last (lst: 'a list) =
   match lst with
-  | [] -> 0
+  | [] -> failwith "empty list"
   | [x] -> x
   | _ :: rest -> last rest
 
+(* Test it *)
 let () =
-  last ([0; 1; 2]); (*I give up, OCaml is damn hard.*)
+  Printf.printf "Last element: %d\n" (last [0; 1; 2])
